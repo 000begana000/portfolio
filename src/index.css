@@ -19,6 +19,7 @@ header {
 header h3 {
   margin: 0;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 header p {
@@ -36,15 +37,23 @@ header p {
 .sidebar ul {
   list-style: none;
   margin: 40px 0;
-  font-size: 1.1rem;
   letter-spacing: 2px;
 }
 
+.sidebar {
+  border-right: 1px solid white;
+  padding-right: 10%;
+}
+
 .sidebar li {
-  margin: 7px 0;
+  margin: 3px 0;
 }
 
 .sidebar a {
   text-decoration: none;
   color: white;
+}
+
+.content {
+  padding-left: 20px;
 }

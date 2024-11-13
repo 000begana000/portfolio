@@ -1,4 +1,5 @@
 import Sidebar from "./components/Sidebar.jsx";
+import Content from "./components/Content.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </header>
       <div className="container">
         <Sidebar />
+        <Content />
       </div>
     </>
   );
