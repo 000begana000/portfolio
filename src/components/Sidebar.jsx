@@ -1,10 +1,20 @@
 export default function Sidebar() {
   return (
     <nav className="sidebar">
-      <button>home</button>
-      <button>projects</button>
-      <button>info</button>
-      <button>contact</button>
+      <ul>
+        <li>
+          <button>home</button>
+        </li>
+        <li>
+          <button>projects</button>
+        </li>
+        <li>
+          <button>info</button>
+        </li>
+        <li>
+          <button>contact</button>
+        </li>
+      </ul>
     </nav>
   );
 }
