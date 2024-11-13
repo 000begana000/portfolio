@@ -8,6 +8,20 @@ body {
   align-items: center;
   justify-content: center;
   background-color: black;
+  color: white;
+}
+
+header {
+  text-align: right;
+}
+
+header h3 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin: 0;
 }
 
 .container {
@@ -15,7 +29,7 @@ body {
   height: 80vh;
   border: 2px solid white;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .sidebar ul {
@@ -25,11 +39,11 @@ body {
   letter-spacing: 2px;
 }
 
-.sidebar ul li {
+.sidebar li {
   margin: 7px 0;
 }
 
-.sidebar ul a {
+.sidebar a {
   text-decoration: none;
   color: white;
 }
