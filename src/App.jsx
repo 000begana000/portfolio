@@ -3,16 +3,18 @@ import Content from "./components/Content.jsx";
 
 function App() {
   return (
-    <>
-      <header>
-        <h3>Begana Choi</h3>
-        <p>front-end developer</p>
-      </header>
+    <div className="background">
       <div className="container">
-        <Sidebar />
-        <Content />
+        <header>
+          <h3>Begana Choi</h3>
+          <p>front-end developer</p>
+        </header>
+        <div className="main">
+          <Sidebar />
+          <Content />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
