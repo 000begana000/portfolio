@@ -3,16 +3,16 @@ export default function Sidebar() {
     <nav className="sidebar">
       <ul>
         <li>
-          <a href="#">home</a>
+          <button>home</button>
         </li>
         <li>
-          <a href="#">projects</a>
+          <button>projects</button>
         </li>
         <li>
-          <a href="#">info</a>
+          <button>info</button>
         </li>
         <li>
-          <a href="#">contact</a>
+          <button>contact</button>
         </li>
       </ul>
     </nav>
