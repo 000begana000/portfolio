@@ -1,17 +1,15 @@
-export default function Content() {
+import Home from "./Home.jsx";
+import Projects from "./Projects.jsx";
+import Info from "./Info.jsx";
+import Contact from "./Contact.jsx";
+
+export default function Content({ content }) {
   return (
     <div className="content">
-      <h1>Content</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores
-        beatae aliquam rerum, architecto magnam, officia
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
-        dicta dolores reiciendis beatae architecto repellat, cumque quia
-        voluptate necessitatibus. Sit perferendis odit maiores beatae ut
-        explicabo, inventore dignissimos provident nisi.
-      </p>
+      {content === "home" && <Home />}
+      {content === "projects" && <Projects />}
+      {content === "info" && <Info />}
+      {content === "contact" && <Contact />}
     </div>
   );
 }

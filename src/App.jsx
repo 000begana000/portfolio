@@ -1,7 +1,15 @@
+import { useState } from "react";
+
 import Sidebar from "./components/Sidebar.jsx";
 import Content from "./components/Contents/Content.jsx";
 
 function App() {
+  const [content, setContent] = useState("home");
+
+  function handleChangeContent(selectedButton) {
+    setContent(selectedButton);
+  }
+
   return (
     <div className="background">
       <div className="container">
@@ -10,8 +18,8 @@ function App() {
           <p>front-end developer</p>
         </header>
         <div className="main">
-          <Sidebar />
-          <Content />
+          <Sidebar onSelect={handleChangeContent} />
+          <Content content={content} />
         </div>
       </div>
     </div>

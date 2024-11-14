@@ -1,18 +1,18 @@
-export default function Sidebar() {
+export default function Sidebar({ onSelect }) {
   return (
     <nav className="sidebar">
       <ul>
         <li>
-          <button>home</button>
+          <button onClick={() => onSelect("home")}>home</button>
         </li>
         <li>
-          <button>projects</button>
+          <button onClick={() => onSelect("projects")}>projects</button>
         </li>
         <li>
-          <button>info</button>
+          <button onClick={() => onSelect("info")}>info</button>
         </li>
         <li>
-          <button>contact</button>
+          <button onClick={() => onSelect("contact")}>contact</button>
         </li>
       </ul>
     </nav>
