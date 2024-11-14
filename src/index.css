@@ -31,8 +31,9 @@ header p {
 
 .container {
   width: 80vw;
-  height: 85vh;
+  height: 57vh;
   margin: 0 auto;
+  margin-top: -50px;
 }
 
 .main {
