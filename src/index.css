@@ -7,12 +7,19 @@ body {
 }
 
 .background {
-  width: 100vw;
+  /* width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  z-index: -1; */
+  position: "absolute";
+  top: 0;
+  left: 0;
+  width: "100vw";
+  height: "100vh";
+  z-index: -1;
+  overflow: "hidden";
 }
 
 header {
