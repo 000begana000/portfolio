@@ -80,4 +80,5 @@ header p {
 
 .content {
   padding-left: 20px;
+  backdrop-filter: blur(10px);
 }
