@@ -20,7 +20,6 @@ function App() {
           position: "relative",
           zIndex: 1, // Place this above the background
           color: "white",
-          textAlign: "center",
           paddingTop: "25vh",
         }}
       >
