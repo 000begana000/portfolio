@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import Stats from "three/examples/jsm/libs/stats.module";
-import { GUI } from "three/examples/jsm/libs/lil-gui.module.min";
+// import { GUI } from "three/examples/jsm/libs/lil-gui.module.min";
 
 const ThreeParticles = () => {
   const mountRef = useRef(null);
@@ -67,14 +67,14 @@ const ThreeParticles = () => {
       mountRef.current.appendChild(renderer.domElement);
 
       // Stats
-      stats = new Stats();
-      mountRef.current.appendChild(stats.dom);
+      // stats = new Stats();
+      // mountRef.current.appendChild(stats.dom);
 
       // GUI
-      const gui = new GUI();
-      gui.add(material, "sizeAttenuation").onChange(() => {
-        material.needsUpdate = true;
-      });
+      // const gui = new GUI();
+      // gui.add(material, "sizeAttenuation").onChange(() => {
+      //   material.needsUpdate = true;
+      // });
 
       // Event Listeners
       document.body.style.touchAction = "none";
@@ -109,7 +109,7 @@ const ThreeParticles = () => {
       material.color.setHSL(h, 0.5, 0.5);
 
       renderer.render(scene, camera);
-      stats.update();
+      // stats.update();
     };
 
     init();
