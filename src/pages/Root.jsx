@@ -22,7 +22,9 @@ export default function RootLayout() {
         </header>
         <div className="main">
           <MainNavigation />
-          <Outlet />
+          <div>
+            <Outlet />
+          </div>
         </div>
       </div>
     </>
