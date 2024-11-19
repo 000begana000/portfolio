@@ -1,42 +1,24 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { useState } from "react";
 
-import MainNavigation from "./components/MainNavitation.jsx";
-import Content from "./components/Contents/Content.jsx";
-import ThreeParticles from "./components/ThreeParticles.jsx";
+import RootLayout from "./pages/Root.jsx";
+import HomePage from "./pages/Home.jsx";
+import InfoPage from "./pages/Info.jsx";
+import ProjectsPage from "./pages/Projects.jsx";
+import ContactPage from "./pages/Contact.jsx";
 
 function App() {
-  const [content, setContent] = useState("home");
-
-  function handleChangeContent(selectedButton) {
-    setContent(selectedButton);
-  }
-
   const router = createBrowserRouter([
-    { path: "/", element: <MainNavigation /> },
+    {
+      path: "/",
+      element: <RootLayout />,
+      children: [
+        { path: "/", element: <HomePage /> },
+        { path: "/info", element: <InfoPage /> },
+        { path: "/Projects", element: <ProjectsPage /> },
+        { path: "/Contact", element: <ContactPage /> },
+      ],
+    },
   ]);
-
-  // <>
-  //     <ThreeParticles />
-  //     <div
-  //       className="container"
-  //       style={{
-  //         position: "relative",
-  //         zIndex: 1, // Place this above the background
-  //         color: "white",
-  //         paddingTop: "25vh",
-  //       }}
-  //     >
-  //       <header>
-  //         <h3>Begana Choi</h3>
-  //         <p>front-end developer</p>
-  //       </header>
-  //       <div className="main">
-  //         <Sidebar onSelect={handleChangeContent} />
-  //         <Content content={content} />
-  //       </div>
-  //     </div>
-  //   </>
 
   return <RouterProvider router={router} />;
 }

@@ -1,7 +1,7 @@
-export default function Home() {
+export default function ProjectsPage() {
   return (
     <>
-      <h1>Home</h1>
+      <h1>Projects</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores
         beatae aliquam rerum, architecto magnam, officia

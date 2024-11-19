@@ -1,7 +1,7 @@
-export default function Contact() {
+export default function HomePage() {
   return (
     <>
-      <h1>Contact</h1>
+      <h1>Home</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores
         beatae aliquam rerum, architecto magnam, officia

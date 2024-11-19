@@ -1,7 +1,7 @@
-export default function Info() {
+export default function ContactPage() {
   return (
     <>
-      <h1>Info</h1>
+      <h1>Contact</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores
         beatae aliquam rerum, architecto magnam, officia
