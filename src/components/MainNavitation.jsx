@@ -1,4 +1,4 @@
-export default function Sidebar({ onSelect }) {
+export default function MainNavitation({ onSelect }) {
   return (
     <nav className="sidebar">
       <ul>
